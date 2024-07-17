@@ -1,0 +1,182 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('../images/profile1.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilo do cabeçalho */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    text-align: right;
+}
+
+#logo {
+    width: 100px;
+}
+
+/* Configurações principais do container */
+#container {
+    width: 90%;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Tornar o fundo ligeiramente transparente para um toque delicado */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    color: black; /* Texto preto para leitura clara */
+    border: 2px solid #f0c14b; /* Borda dourada para destacar */
+}
+
+/* Estilos dos títulos */
+#title {
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    font-size: 2.5em;
+    color: #d4af37; /* Dourado para o título */
+}
+
+/* Ajustes para caixas de entrada e etiquetas */
+.input-box {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333; /* Cor escura para contraste */
+}
+
+.input-box .input-field {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.input-box .input-field i {
+    margin-right: 10px;
+}
+
+.input-box .input-field input,
+.input-box .input-field select {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #d4af37; /* Borda dourada para os campos de entrada */
+    background: transparent;
+    color: black;
+}
+
+/* Botões com efeito degradê dourado */
+button {
+    background: linear-gradient(to right, #d4af37, #e6c200);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase; /* Letras maiúsculas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #e6c200, #d4af37);
+}
+#diet-image {
+
+    width: 80%; /* Reduzindo o tamanho da imagem */
+    margin: 20px 0;
+    border-radius: 10px;
+    
+}
+/* Estilo do modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Sombra escura para destaque */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo translúcido para combinar com o estilo da página */
+    padding: 20px;
+    border: 2px solid #d4af37; /* Borda dourada */
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra suave para profundidade */
+    animation: pulse 2s infinite ease-in-out; /* Apply the pulse animation */
+}
+
+.close {
+    color: #d4af37; /* Botão fechar dourado */
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ffffff; /* Mudança de cor ao passar o mouse */
+}
+
+.modal input[type="text"], .modal input[type="email"], .modal input[type="text"] {
+    width: calc(100% - 40px); /* Full width com padding */
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #f0c14b; /* Borda dourada */
+    background: transparent;
+    color: white;
+}
+
+.modal button {
+    background: linear-gradient(to right, #d4af37, #e6c200); /* Degradê dourado para o botão */
+    color: black;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.modal button:hover {
+    background: linear-gradient(to right, #e6c200, #d4af37); /* Efeito hover para o botão */
+}
+@keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
